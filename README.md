@@ -1,4 +1,4 @@
-# Python 100 Days Challenge 🐍
+# Python 100 Days Challenge
 
 東京都市大学 電気電子通信工学科
 

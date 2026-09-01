@@ -49,7 +49,6 @@ def play_game():
 
         if guess == answer:
             return 1
-            break
         elif guess < answer:
             print("もっと大きな数です。")
         else:
@@ -65,3 +64,4 @@ if result == 1:
     print(f"おめでとうございます！正解は {answer} です。")
 elif result == 2:
     print(f"残念でした。正解は {answer} でした。")
+

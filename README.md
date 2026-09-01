@@ -17,15 +17,16 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day1 : Score Checker
 [x] Day2 : Calculator
 [x] Day3 : Rock Paper Scissors
-[ ] Day4 : Number Guess Game
+[x] Day4 : Number Guess Game
 
 ## 作成したアプリ
 
-| Day  | アプリ              | 内容                          |
-| ---- | ------------------- | ----------------------------- |
-| Day1 | Score Checker       | 点数による成績判定プログラム  |
-| Day2 | Calculator          | 四則演算ができるCLI電卓       |
-| Day3 | Rock Paper Scissors | CPUと対戦するじゃんけんゲーム |
+| Day  | アプリ              | 内容                                    |
+| ---- | ------------------- | --------------------------------------- |
+| Day1 | Score Checker       | 点数による成績判定プログラム            |
+| Day2 | Calculator          | 四則演算ができるCLI電卓                 |
+| Day3 | Rock Paper Scissors | CPUと対戦するじゃんけんゲーム           |
+| Day4 | Number Guess Game   | 1~100の数字を当てるゲーム(難易度設定可) |
 
 ---
 

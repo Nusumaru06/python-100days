@@ -15,6 +15,7 @@ while True:
     else:
         print("無効な選択です。1, 2, または 3 を選んでください。")
 
+#試行回数を決定
 def choose_difficulty():
     if difficulty == 1:
         return 10

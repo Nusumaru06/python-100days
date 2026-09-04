@@ -20,6 +20,7 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day4 : Number Guess Game
 [x] Day5 : random string program
 [x] Day6 : CLI todo app
+[x] Day7 : JSON todo app
 
 ## 作成したアプリ
 
@@ -31,6 +32,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day4 | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)              |
 | Day5 | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム |
 | Day6 | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
+| Day7 | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
 
 ---
 

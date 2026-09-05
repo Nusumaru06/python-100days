@@ -8,6 +8,7 @@ def load_tasks():
         with open("todo.json", "r", encoding = "utf-8") as file:
             #jsonを読み込む
             return json.load(file)
+    # JSONファイルが存在しない初回起動時は、空のタスクリストを返す
     except FileNotFoundError:
         return []
 
@@ -31,17 +32,46 @@ while True:
 
 #タスクの追加
     if choice == "1":
-        task = input("追加するタスクを入力してください: ")
-        tasks.append(task)
+        title = input("追加するタスクを入力してください: ")
+
+        new_task = {
+            "title": title,
+            "done": False
+        }
+
+        tasks.append(new_task)
         save_tasks(tasks)
-        print(f"タスク '{task}' を追加しました。")
+        print(f"タスク '{title}' を追加しました。")
 
 #タスクの一覧表示
     elif choice == "2":
         if tasks:
             print("=== タスク一覧 ===")
             for i, task in enumerate(tasks, start=1):
-                print(f"{i}. {task}")
+                status = "x" if task["done"] else " "
+                print(f"{i}. [{status}] {task['title']}")
+        else:
+            print("タスクはありません。")
+
+#タスクの完了
+    elif choice == "3":
+        if tasks:
+            print("=== タスク一覧 ===")
+            for i, task in enumerate(tasks, start=1):
+                status = "x" if task["done"] else " "
+                print(f"{i}. [{status}] {task['title']}")
+            try:
+                # ユーザーは1番から入力するが、Pythonのリストは0番から始まるため1を引く
+                index = int(input("完了するタスクの番号を入力してください: ")) - 1
+                if 0 <= index < len(tasks):
+                    # タスクの完了状態だけ変更し、タスク自体は削除しない
+                    tasks[index]["done"] = True
+                    save_tasks(tasks)
+                    print(f"タスク '{tasks[index]['title']}' を完了しました。")
+                else:
+                    print("無効な番号です。")
+            except ValueError:
+                print("有効な番号を入力してください。")
         else:
             print("タスクはありません。")
 
@@ -50,13 +80,14 @@ while True:
         if tasks:
             print("=== タスク一覧 ===")
             for i, task in enumerate(tasks, start=1):
-                print(f"{i}. {task}")
+                status = "x" if task["done"] else " "
+                print(f"{i}. [{status}] {task['title']}")
             try:
                 index = int(input("削除するタスクの番号を入力してください: ")) - 1
                 if 0 <= index < len(tasks):
                     removed_task = tasks.pop(index)
                     save_tasks(tasks)
-                    print(f"タスク '{removed_task}' を削除しました。")
+                    print(f"タスク '{removed_task['title']}' を削除しました。")
                 else:
                     print("無効な番号です。")
             except ValueError:

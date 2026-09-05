@@ -21,6 +21,7 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day5 : random string program
 [x] Day6 : CLI todo app
 [x] Day7 : JSON todo app
+[x] Day8 : ToDo App ver2.0
 
 ## 作成したアプリ
 
@@ -33,6 +34,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day5 | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム |
 | Day6 | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
 | Day7 | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
+| Day8 | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
 
 ---
 

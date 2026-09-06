@@ -22,6 +22,7 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day6 : CLI todo app
 [x] Day7 : JSON todo app
 [x] Day8 : ToDo App ver2.0
+[x] Day9 : ToDo App refactor
 
 ## 作成したアプリ
 
@@ -35,6 +36,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day6 | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
 | Day7 | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
 | Day8 | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
+| Day9 | ToDo App ver2.5       | 関数を用いてメン処理部分をよりシンプルに             |
 
 ---
 

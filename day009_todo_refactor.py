@@ -51,15 +51,13 @@ def get_task_index(tasks, message):
         print("タスクはありません。")
     return None
 
-#完了済みタスクの追加
+#タスクを完了状態にする
 def complete_task(tasks):
     index = get_task_index(tasks, "完了するタスクの番号を入力してください: ")
     if index is not None:
         tasks[index]["done"] = True
         save_tasks(tasks)
         print(f"タスク '{tasks[index]['title']}' を完了しました。")
-    else:
-        print("タスクはありません。")
 
 #タスクを削除
 def delete_task(tasks):
@@ -68,8 +66,6 @@ def delete_task(tasks):
         removed_task = tasks.pop(index)
         save_tasks(tasks)
         print(f"タスク '{removed_task['title']}' を削除しました。")
-    else:
-        print("タスクはありません。")
 
 #タスクを読み込む
 def load_tasks():

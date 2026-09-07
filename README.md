@@ -23,20 +23,22 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day7 : JSON todo app
 [x] Day8 : ToDo App ver2.0
 [x] Day9 : ToDo App refactor
+[x] Day10 : ToDo App ver3.0
 
 ## 作成したアプリ
 
-| Day  | アプリ                | 内容                                                 |
-| ---- | --------------------- | ---------------------------------------------------- |
-| Day1 | Score Checker         | 点数による成績判定プログラム                         |
-| Day2 | Calculator            | 四則演算ができるCLI電卓                              |
-| Day3 | Rock Paper Scissors   | CPUと対戦するじゃんけんゲーム                        |
-| Day4 | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)              |
-| Day5 | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム |
-| Day6 | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
-| Day7 | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
-| Day8 | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
-| Day9 | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに           |
+| Day   | アプリ                | 内容                                                 |
+| ----- | --------------------- | ---------------------------------------------------- |
+| Day1  | Score Checker         | 点数による成績判定プログラム                         |
+| Day2  | Calculator            | 四則演算ができるCLI電卓                              |
+| Day3  | Rock Paper Scissors   | CPUと対戦するじゃんけんゲーム                        |
+| Day4  | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)              |
+| Day5  | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム |
+| Day6  | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
+| Day7  | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
+| Day8  | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
+| Day9  | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに           |
+| Day10 | ToDo App ver3.0       | タスクの検索機能を追加                               |
 
 ---
 

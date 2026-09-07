@@ -39,8 +39,11 @@ def add_task(tasks):
 #タスクを検索
 def search_tasks(tasks):
     keyword = input("検索するキーワードを入力してください: ")
-    found_tasks = [task for task in tasks if keyword in task["title"]]
-
+    found_tasks = [
+        task
+        for task in tasks
+        if keyword.lower() in task["title"].lower()
+    ]
     if found_tasks:
         print(f"=== '{keyword}' を含むタスク一覧 ===")
         for i, task in enumerate(found_tasks, start=1):

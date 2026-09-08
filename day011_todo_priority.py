@@ -11,7 +11,8 @@ def show_menu():
     print("3 : タスクを検索")
     print("4 : タスクを完了")
     print("5 : タスクを削除")
-    print("6 : 終了")
+    print("6 : 優先度順に表示")
+    print("7 : 終了")
 
 #タスク一覧を表示
 def show_tasks(tasks):
@@ -97,6 +98,18 @@ def save_tasks(tasks):
     with open("tasks.json", "w", encoding="utf-8") as file:
         json.dump(tasks, file, ensure_ascii=False, indent=4)
 
+#優先度順に表示
+def show_tasks_by_priority(tasks):
+    if tasks:
+        sorted_tasks = sorted(tasks, key=lambda x: x.get("priority", 0), reverse=True)
+        print("=== 優先度順のタスク一覧 ===")
+        for i, task in enumerate(sorted_tasks, start=1):
+            status = "x" if task["done"] else " "
+            priority = task.get("priority", 0)
+            print(f"{i}. [{status}] {task['title']} (優先度: {priority})")
+    else:
+        print("タスクはありません。")
+
 #初期化
 tasks = load_tasks()
 
@@ -117,6 +130,8 @@ while True:
     elif choice == "5":
         delete_task(tasks)
     elif choice == "6":
+        show_tasks_by_priority(tasks)
+    elif choice == "7":
         print("アプリを終了します。")
         break
     else:

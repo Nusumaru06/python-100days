@@ -20,7 +20,8 @@ def show_tasks(tasks):
         print("=== タスク一覧 ===")
         for i, task in enumerate(tasks, start=1):
             status = "x" if task["done"] else " "
-            print(f"{i}. [{status}] {task['title']}")
+            priority = task.get("priority", 0)
+            print(f"{i}. [{status}] {task['title']} (優先度: {priority})")
     else:
         print("タスクはありません。")
 
@@ -28,9 +29,27 @@ def show_tasks(tasks):
 def add_task(tasks):
     title = input("追加するタスクを入力してください: ")
 
+    while True:
+        print("優先度を選択してください")
+        print("1 : Low")
+        print("2 : Medium")
+        print("3 : High")
+
+        try:
+            priority = int(input("選択: "))
+
+            if priority in [1, 2, 3]:
+                break
+            else:
+                print("1〜3を入力してください。")
+
+        except ValueError:
+            print("数字を入力してください。")
+
     new_task = {
         "title": title,
-        "done": False
+        "done": False,
+        "priority": priority
     }
 
     tasks.append(new_task)
@@ -49,7 +68,8 @@ def search_tasks(tasks):
         print(f"=== '{keyword}' を含むタスク一覧 ===")
         for i, task in enumerate(found_tasks, start=1):
             status = "x" if task["done"] else " "
-            print(f"{i}. [{status}] {task['title']}")
+            priority = task.get("priority", 0)
+            print(f"{i}. [{status}] {task['title']} (優先度: {priority})")
     else:
         print(f"'{keyword}' を含むタスクは見つかりませんでした。")
 
@@ -98,15 +118,57 @@ def save_tasks(tasks):
     with open("tasks.json", "w", encoding="utf-8") as file:
         json.dump(tasks, file, ensure_ascii=False, indent=4)
 
+#タスク一覧を表示
+def show_tasks(tasks):
+    if tasks:
+        print("=== タスク一覧 ===")
+
+        priority_names = {
+            3: "HIGH",
+            2: "MEDIUM",
+            1: "LOW",
+            0: "NONE"
+        }
+
+        for i, task in enumerate(tasks, start=1):
+            status = "x" if task["done"] else " "
+            priority = task.get("priority", 0)
+            priority_name = priority_names[priority]
+
+            print(
+                f"{i}. [{status}] [{priority_name}] "
+                f"{task['title']}"
+            )
+    else:
+        print("タスクはありません。")
+
 #優先度順に表示
 def show_tasks_by_priority(tasks):
     if tasks:
-        sorted_tasks = sorted(tasks, key=lambda x: x.get("priority", 0), reverse=True)
+        priority_names = {
+            3: "HIGH",
+            2: "MEDIUM",
+            1: "LOW",
+            0: "NONE"
+        }
+
+        sorted_tasks = sorted(
+            tasks,
+            key=lambda task: task.get("priority", 0),
+            reverse=True
+        )
+
         print("=== 優先度順のタスク一覧 ===")
+
         for i, task in enumerate(sorted_tasks, start=1):
             status = "x" if task["done"] else " "
             priority = task.get("priority", 0)
-            print(f"{i}. [{status}] {task['title']} (優先度: {priority})")
+            priority_name = priority_names[priority]
+
+            print(
+                f"{i}. [{status}] [{priority_name}] "
+                f"{task['title']}"
+            )
     else:
         print("タスクはありません。")
 

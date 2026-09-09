@@ -24,6 +24,7 @@ Webアプリ開発（React・TypeScript）へ進む
 [x] Day8 : ToDo App ver2.0
 [x] Day9 : ToDo App refactor
 [x] Day10 : ToDo App ver3.0
+[x] Day11 : ToDo Priority
 
 ## 作成したアプリ
 
@@ -39,7 +40,21 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day8  | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
 | Day9  | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに           |
 | Day10 | ToDo App ver3.0       | タスクの検索機能を追加                               |
+| Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように       |
 
 ---
+
+## 現在扱える主な内容
+
+- 変数・条件分岐
+- `for` / `while`
+- 関数
+- `list` / `dict`
+- `try / except`
+- JSON読み書き
+- 文字列操作
+- リスト内包表記
+- `sorted()` / `lambda`
+- Git / GitHub
 
 **100日後にはWebアプリやポートフォリオサイトまで公開予定です。**

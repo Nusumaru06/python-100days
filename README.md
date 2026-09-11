@@ -14,33 +14,35 @@ Webアプリ開発（React・TypeScript）へ進む
 
 ## Progress
 
-[x] Day1 : Score Checker
-[x] Day2 : Calculator
-[x] Day3 : Rock Paper Scissors
-[x] Day4 : Number Guess Game
-[x] Day5 : random string program
-[x] Day6 : CLI todo app
-[x] Day7 : JSON todo app
-[x] Day8 : ToDo App ver2.0
-[x] Day9 : ToDo App refactor
-[x] Day10 : ToDo App ver3.0
-[x] Day11 : ToDo Priority
+- [x] Day1 : Score Checker
+- [x] Day2 : Calculator
+- [x] Day3 : Rock Paper Scissors
+- [x] Day4 : Number Guess Game
+- [x] Day5 : random string program
+- [x] Day6 : CLI todo app
+- [x] Day7 : JSON todo app
+- [x] Day8 : ToDo App ver2.0
+- [x] Day9 : ToDo App refactor
+- [x] Day10 : ToDo App ver3.0
+- [x] Day11 : ToDo Priority
+- [x] Day12 : ToDo Due Date
 
 ## 作成したアプリ
 
-| Day   | アプリ                | 内容                                                 |
-| ----- | --------------------- | ---------------------------------------------------- |
-| Day1  | Score Checker         | 点数による成績判定プログラム                         |
-| Day2  | Calculator            | 四則演算ができるCLI電卓                              |
-| Day3  | Rock Paper Scissors   | CPUと対戦するじゃんけんゲーム                        |
-| Day4  | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)              |
-| Day5  | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム |
-| Day6  | CLI todo app          | ToDoのタスク管理ができるアプリ                       |
-| Day7  | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ               |
-| Day8  | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように       |
-| Day9  | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに           |
-| Day10 | ToDo App ver3.0       | タスクの検索機能を追加                               |
-| Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように       |
+| Day   | アプリ                | 内容                                                     |
+| ----- | --------------------- | -------------------------------------------------------- |
+| Day1  | Score Checker         | 点数による成績判定プログラム                             |
+| Day2  | Calculator            | 四則演算ができるCLI電卓                                  |
+| Day3  | Rock Paper Scissors   | CPUと対戦するじゃんけんゲーム                            |
+| Day4  | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)                  |
+| Day5  | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム     |
+| Day6  | CLI todo app          | ToDoのタスク管理ができるアプリ                           |
+| Day7  | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ                   |
+| Day8  | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように           |
+| Day9  | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに               |
+| Day10 | ToDo App ver3.0       | タスクの検索機能を追加                                   |
+| Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように           |
+| Day12 | ToDo Due Date         | datetimeによって日付入力検証・期限順ソートができるように |
 
 ---
 

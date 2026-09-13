@@ -27,6 +27,7 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day11 : ToDo Priority
 - [x] Day12 : ToDo Due Date
 - [x] Day13 : ToDo Overview
+- [x] Day14 : Class Warmup
 
 ## 作成したアプリ
 
@@ -45,6 +46,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように           |
 | Day12 | ToDo Due Date         | datetimeによって日付入力検証・期限順ソートができるように |
 | Day13 | ToDo Due Overview     | ToDoの統計が表示できるように                             |
+| Day14 | Class Warmup          | class・**init**・self・インスタンス                      |
 
 ---
 

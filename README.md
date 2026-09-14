@@ -28,6 +28,8 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day12 : ToDo Due Date
 - [x] Day13 : ToDo Overview
 - [x] Day14 : Class Warmup
+- [x] Day15 : Task Class with OOP
+- [ ] Day16 : Coming soon...
 
 ## 作成したアプリ
 
@@ -46,7 +48,8 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように           |
 | Day12 | ToDo Due Date         | datetimeによって日付入力検証・期限順ソートができるように |
 | Day13 | ToDo Due Overview     | ToDoの統計が表示できるように                             |
-| Day14 | Class Warmup          | class・**init**・self・インスタンス                      |
+| Day14 | Class Warmup          | class・init・self・インスタンス                          |
+| Day15 | Task Class            | OOP・属性・メソッド・Taskクラスについて学びました        |
 
 ---
 
@@ -61,6 +64,21 @@ Webアプリ開発（React・TypeScript）へ進む
 - 文字列操作
 - リスト内包表記
 - `sorted()` / `lambda`
+- `datetime`
+- `class`
+- `__init__`
+- `self`
+- インスタンス
+- メソッド
 - Git / GitHub
+
+## 今後
+
+Day15からOOP（オブジェクト指向）の学習を開始。
+
+今後はこれまで作ってきたToDoアプリを題材に、
+クラスを使った設計へ少しずつ発展させていく予定です
+
+---
 
 **100日後にはWebアプリやポートフォリオサイトまで公開予定です。**

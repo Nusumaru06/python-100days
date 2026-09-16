@@ -1,8 +1,8 @@
-#OOP ToDo App
+#OOP Json ToDo App
 
 import datetime
 
-print("=== OOP ToDo App ===")
+print("=== OOP Json ToDo App ===")
 
 
 class Task:

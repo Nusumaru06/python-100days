@@ -29,27 +29,31 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day13 : ToDo Overview
 - [x] Day14 : Class Warmup
 - [x] Day15 : Task Class with OOP
-- [ ] Day16 : Coming soon...
+- [x] Day16 : OOP ToDo App
+- [x] Day17 : OOP ToDo App with JSON
+- [ ] Day18 : Coming soon...
 
 ## 作成したアプリ
 
-| Day   | アプリ                | 内容                                                     |
-| ----- | --------------------- | -------------------------------------------------------- |
-| Day1  | Score Checker         | 点数による成績判定プログラム                             |
-| Day2  | Calculator            | 四則演算ができるCLI電卓                                  |
-| Day3  | Rock Paper Scissors   | CPUと対戦するじゃんけんゲーム                            |
-| Day4  | Number Guess Game     | 1~100の数字を当てるゲーム(難易度設定可)                  |
-| Day5  | random string program | ユーザーが決定した仕様の文字列が出力されるプログラム     |
-| Day6  | CLI todo app          | ToDoのタスク管理ができるアプリ                           |
-| Day7  | JSON todo app         | Jsonにより保存機能を搭載したToDoアプリ                   |
-| Day8  | ToDo App ver2.0       | dictによってタスクが完了済みか確認できるように           |
-| Day9  | ToDo App ver2.5       | 関数を用いてメイン処理部分をよりシンプルに               |
-| Day10 | ToDo App ver3.0       | タスクの検索機能を追加                                   |
-| Day11 | ToDo Priority         | sorted、lambdaによって優先度管理が出来るように           |
-| Day12 | ToDo Due Date         | datetimeによって日付入力検証・期限順ソートができるように |
-| Day13 | ToDo Due Overview     | ToDoの統計が表示できるように                             |
-| Day14 | Class Warmup          | class・init・self・インスタンス                          |
-| Day15 | Task Class            | OOP・属性・メソッド・Taskクラスについて学びました        |
+| Day   | アプリ                 | 内容                                                               |
+| ----- | ---------------------- | ------------------------------------------------------------------ |
+| Day1  | Score Checker          | 点数による成績判定プログラム                                       |
+| Day2  | Calculator             | 四則演算ができるCLI電卓                                            |
+| Day3  | Rock Paper Scissors    | CPUと対戦するじゃんけんゲーム                                      |
+| Day4  | Number Guess Game      | 1~100の数字を当てるゲーム(難易度設定可)                            |
+| Day5  | random string program  | ユーザーが決定した仕様の文字列が出力されるプログラム               |
+| Day6  | CLI todo app           | ToDoのタスク管理ができるアプリ                                     |
+| Day7  | JSON todo app          | Jsonにより保存機能を搭載したToDoアプリ                             |
+| Day8  | ToDo App ver2.0        | dictによってタスクが完了済みか確認できるように                     |
+| Day9  | ToDo App ver2.5        | 関数を用いてメイン処理部分をよりシンプルに                         |
+| Day10 | ToDo App ver3.0        | タスクの検索機能を追加                                             |
+| Day11 | ToDo Priority          | sorted、lambdaによって優先度管理が出来るように                     |
+| Day12 | ToDo Due Date          | datetimeによって日付入力検証・期限順ソートができるように           |
+| Day13 | ToDo Due Overview      | ToDoの統計が表示できるように                                       |
+| Day14 | Class Warmup           | class・init・self・インスタンス                                    |
+| Day15 | Task Class             | OOP・属性・メソッド・Taskクラスについて学びました                  |
+| Day16 | OOP ToDo App           | `Task`クラスを使ってToDoアプリをOOP化                              |
+| Day17 | OOP ToDo App with JSON | `to_dict()`・`from_dict()`を使い、TaskオブジェクトをJSON保存・復元 |
 
 ---
 
@@ -57,10 +61,13 @@ Webアプリ開発（React・TypeScript）へ進む
 
 - 変数・条件分岐
 - `for` / `while`
+- `break` / `continue`
 - 関数
+- `return`
 - `list` / `dict`
-- `try / except`
+- `try` / `except`
 - JSON読み書き
+- ファイル操作
 - 文字列操作
 - リスト内包表記
 - `sorted()` / `lambda`
@@ -70,14 +77,20 @@ Webアプリ開発（React・TypeScript）へ進む
 - `self`
 - インスタンス
 - メソッド
+- OOP（オブジェクト指向）
+- `@classmethod`
+- オブジェクトと辞書の相互変換
 - Git / GitHub
 
 ## 今後
 
-Day15からOOP（オブジェクト指向）の学習を開始。
+Day15からOOP（オブジェクト指向）の学習を開始しました。
 
-今後はこれまで作ってきたToDoアプリを題材に、
-クラスを使った設計へ少しずつ発展させていく予定です
+Day16ではこれまで作ってきたToDoアプリを`Task`クラスを使った構成へ変更し、
+Day17ではTaskオブジェクトをJSONへ保存・復元できるようにしました。
+
+今後はOOPの理解を深めながら、
+より大きなアプリやWebアプリ開発へ発展させていく予定です。
 
 ---
 

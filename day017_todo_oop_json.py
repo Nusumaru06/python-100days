@@ -1,6 +1,7 @@
 #OOP Json ToDo App
 
 import datetime
+import json
 
 print("=== OOP Json ToDo App ===")
 
@@ -11,6 +12,26 @@ class Task:
         self.priority = priority
         self.due_date = due_date
         self.done = False
+
+    def to_dict(self):
+        return {
+            "title": self.title,
+            "priority": self.priority,
+            "due_date": self.due_date,
+            "done": self.done
+        }
+
+
+    @classmethod
+    def from_dict(cls, data):
+        task = cls(
+            data["title"],
+            data["priority"],
+            data["due_date"]
+        )
+        task.done = data["done"]
+
+        return task
 
     def complete(self):
         self.done = True
@@ -38,6 +59,24 @@ class Task:
             "NONE"
         )
 
+def save_tasks(tasks):
+    data = [task.to_dict() for task in tasks]
+
+    with open("oop_tasks.json", "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+def load_tasks():
+    try:
+        with open("oop_tasks.json", "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+        return [
+            Task.from_dict(task_data)
+            for task_data in data
+        ]
+
+    except FileNotFoundError:
+        return []
 
 def show_menu():
     print("\n1 : タスクを追加")
@@ -102,6 +141,7 @@ def add_task(tasks):
     )
 
     tasks.append(new_task)
+    save_tasks(tasks)
 
     print(
         f"タスク '{title}' を追加しました。"
@@ -173,6 +213,7 @@ def complete_task(tasks):
         return
 
     tasks[index].complete()
+    save_tasks(tasks)
 
     print(
         f"タスク "
@@ -192,6 +233,7 @@ def delete_task(tasks):
         return
 
     removed_task = tasks.pop(index)
+    save_tasks(tasks)
 
     print(
         f"タスク "
@@ -199,7 +241,7 @@ def delete_task(tasks):
         f"を削除しました。"
     )
 
-tasks = []
+tasks = load_tasks()
 
 while True:
     show_menu()

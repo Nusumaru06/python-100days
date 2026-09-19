@@ -31,7 +31,7 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day15 : Task Class with OOP
 - [x] Day16 : OOP ToDo App
 - [x] Day17 : OOP ToDo App with JSON
-- [ ] Day18 : Coming soon...
+- [x] Day18 : TodoApp Class Refactoring
 
 ## 作成したアプリ
 
@@ -54,6 +54,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day15 | Task Class             | OOP・属性・メソッド・Taskクラスについて学びました                  |
 | Day16 | OOP ToDo App           | `Task`クラスを使ってToDoアプリをOOP化                              |
 | Day17 | OOP ToDo App with JSON | `to_dict()`・`from_dict()`を使い、TaskオブジェクトをJSON保存・復元 |
+| Day18 | TodoApp Class Refactoring | `TodoApp`クラスを作成し、アプリ全体の処理をクラスに整理 |
 
 ---
 
@@ -80,6 +81,10 @@ Webアプリ開発（React・TypeScript）へ進む
 - OOP（オブジェクト指向）
 - `@classmethod`
 - オブジェクトと辞書の相互変換
+- 複数クラスの役割分担
+- クラス内メソッドの呼び出し
+- `self.tasks` を使った状態管理
+- アプリ全体のクラス化
 - Git / GitHub
 
 ## 今後
@@ -88,6 +93,10 @@ Day15からOOP（オブジェクト指向）の学習を開始しました。
 
 Day16ではこれまで作ってきたToDoアプリを`Task`クラスを使った構成へ変更し、
 Day17ではTaskオブジェクトをJSONへ保存・復元できるようにしました。
+
+Day18ではさらに`TodoApp`クラスを作成し、
+タスクの追加・一覧・完了・削除などのアプリ全体の処理を
+1つのクラスにまとめました。
 
 今後はOOPの理解を深めながら、
 より大きなアプリやWebアプリ開発へ発展させていく予定です。

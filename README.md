@@ -32,29 +32,32 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day16 : OOP ToDo App
 - [x] Day17 : OOP ToDo App with JSON
 - [x] Day18 : TodoApp Class Refactoring
+- [x] Day19 : Task String Representation
+- [ ] Day20 : Coming soon...
 
 ## 作成したアプリ
 
-| Day   | アプリ                 | 内容                                                               |
-| ----- | ---------------------- | ------------------------------------------------------------------ |
-| Day1  | Score Checker          | 点数による成績判定プログラム                                       |
-| Day2  | Calculator             | 四則演算ができるCLI電卓                                            |
-| Day3  | Rock Paper Scissors    | CPUと対戦するじゃんけんゲーム                                      |
-| Day4  | Number Guess Game      | 1~100の数字を当てるゲーム(難易度設定可)                            |
-| Day5  | random string program  | ユーザーが決定した仕様の文字列が出力されるプログラム               |
-| Day6  | CLI todo app           | ToDoのタスク管理ができるアプリ                                     |
-| Day7  | JSON todo app          | Jsonにより保存機能を搭載したToDoアプリ                             |
-| Day8  | ToDo App ver2.0        | dictによってタスクが完了済みか確認できるように                     |
-| Day9  | ToDo App ver2.5        | 関数を用いてメイン処理部分をよりシンプルに                         |
-| Day10 | ToDo App ver3.0        | タスクの検索機能を追加                                             |
-| Day11 | ToDo Priority          | sorted、lambdaによって優先度管理が出来るように                     |
-| Day12 | ToDo Due Date          | datetimeによって日付入力検証・期限順ソートができるように           |
-| Day13 | ToDo Due Overview      | ToDoの統計が表示できるように                                       |
-| Day14 | Class Warmup           | class・init・self・インスタンス                                    |
-| Day15 | Task Class             | OOP・属性・メソッド・Taskクラスについて学びました                  |
-| Day16 | OOP ToDo App           | `Task`クラスを使ってToDoアプリをOOP化                              |
-| Day17 | OOP ToDo App with JSON | `to_dict()`・`from_dict()`を使い、TaskオブジェクトをJSON保存・復元 |
-| Day18 | TodoApp Class Refactoring | `TodoApp`クラスを作成し、アプリ全体の処理をクラスに整理 |
+| Day   | アプリ                     | 内容                                                               |
+| ----- | -------------------------- | ------------------------------------------------------------------ |
+| Day1  | Score Checker              | 点数による成績判定プログラム                                       |
+| Day2  | Calculator                 | 四則演算ができるCLI電卓                                            |
+| Day3  | Rock Paper Scissors        | CPUと対戦するじゃんけんゲーム                                      |
+| Day4  | Number Guess Game          | 1~100の数字を当てるゲーム(難易度設定可)                            |
+| Day5  | random string program      | ユーザーが決定した仕様の文字列が出力されるプログラム               |
+| Day6  | CLI todo app               | ToDoのタスク管理ができるアプリ                                     |
+| Day7  | JSON todo app              | Jsonにより保存機能を搭載したToDoアプリ                             |
+| Day8  | ToDo App ver2.0            | dictによってタスクが完了済みか確認できるように                     |
+| Day9  | ToDo App ver2.5            | 関数を用いてメイン処理部分をよりシンプルに                         |
+| Day10 | ToDo App ver3.0            | タスクの検索機能を追加                                             |
+| Day11 | ToDo Priority              | sorted、lambdaによって優先度管理が出来るように                     |
+| Day12 | ToDo Due Date              | datetimeによって日付入力検証・期限順ソートができるように           |
+| Day13 | ToDo Due Overview          | ToDoの統計が表示できるように                                       |
+| Day14 | Class Warmup               | class・init・self・インスタンス                                    |
+| Day15 | Task Class                 | OOP・属性・メソッド・Taskクラスについて学びました                  |
+| Day16 | OOP ToDo App               | `Task`クラスを使ってToDoアプリをOOP化                              |
+| Day17 | OOP ToDo App with JSON     | `to_dict()`・`from_dict()`を使い、TaskオブジェクトをJSON保存・復元 |
+| Day18 | TodoApp Class Refactoring  | `TodoApp`クラスを作成し、アプリ全体の処理をクラスに整理            |
+| Day19 | Task String Representation | `__str__()`を使ってTaskオブジェクトの表示を整理                    |
 
 ---
 
@@ -85,6 +88,8 @@ Webアプリ開発（React・TypeScript）へ進む
 - クラス内メソッドの呼び出し
 - `self.tasks` を使った状態管理
 - アプリ全体のクラス化
+- 特殊メソッド `__str__()`
+- オブジェクトの文字列表現
 - Git / GitHub
 
 ## 今後

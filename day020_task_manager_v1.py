@@ -72,19 +72,102 @@ class TodoApp:
         print("7 : 終了")
 
     def add_task(self):
-        ...
+            title = input(
+                "追加するタスクを入力してください"
+            )
+
+            priority = self.input_priority()
+            due_date = self.input_due_date()
+
+            new_task = Task(
+                title,
+                priority,
+                due_date
+            )
+
+            self.tasks.append(new_task)
+
+            print(
+                f"タスク '{title}' を追加しました。"
+            )
 
     def show_tasks(self):
-        ...
+        if not self.tasks:
+            print("タスクはありません。")
+            return
+
+        print("=== タスク一覧 ===")
+
+        for i, task in enumerate(
+            self.tasks,
+            start=1
+        ):
+            status = "x" if task.done else " "
+
+            print(
+                f"{i}. "
+                f"[{status}] "
+                f"{task.title} "
+                f"(優先度: {task.priority}) "
+                f"(期限: {task.due_date})"
+            )
+
+    def get_task_index(self, message):
+        if not self.tasks:
+            print("タスクはありません。")
+            return None
+
+        self.show_tasks()
+
+        try:
+            index = int(input(message)) - 1
+
+            if 0 <= index < len(self.tasks):
+                return index
+
+            print("無効な番号です。")
+
+        except ValueError:
+            print("有効な番号を入力してください。")
+
+        return None
 
     def search_tasks(self):
         ...
 
     def complete_task(self):
-        ...
+        index = self.get_task_index(
+            "完了するタスクの番号を入力してください: "
+        )
+
+        if index is None:
+            return
+
+        self.tasks[index].complete()
+        self.save_tasks()
+
+        print(
+            f"タスク "
+            f"'{self.tasks[index].title}' "
+            f"を完了しました。"
+        )
 
     def delete_task(self):
-        ...
+        index = self.get_task_index(
+            "削除するタスクの番号を入力してください: "
+        )
+
+        if index is None:
+            return
+
+        removed_task = self.tasks.pop(index)
+        self.save_tasks()
+
+        print(
+            f"タスク "
+            f"'{removed_task.title}' "
+            f"を削除しました。"
+        )
 
     def show_statistics(self):
         ...

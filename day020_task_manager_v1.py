@@ -50,9 +50,9 @@ class Task:
         status = "完了" if self.done else "未完了"
 
         return (
-            f"[{status}]",
-            f"{self.title}",
-            f"(優先度: {self.priority})",
+            f"[{status}]"
+            f"{self.title}"
+            f"(優先度: {self.priority})"
             f"(期限: {self.due_date})"
         )
 
@@ -86,6 +86,7 @@ class TodoApp:
             )
 
             self.tasks.append(new_task)
+            self.save_tasks()
 
             print(
                 f"タスク '{title}' を追加しました。"
@@ -133,7 +134,22 @@ class TodoApp:
         return None
 
     def search_tasks(self):
-        ...
+        keyword = input("検索キーワードを入力してください: ")
+
+        found_tasks = [
+            task
+            for task in self.tasks
+            if keyword.lower() in task.title.lower()
+        ]
+
+        if not found_tasks:
+            print("該当するタスクはありません。")
+            return
+
+        print("=== 検索結果 ===")
+
+        for i, task in enumerate(found_tasks, start=1):
+            print(f"{i}. {task}")
 
     def complete_task(self):
         index = self.get_task_index(
@@ -170,16 +186,79 @@ class TodoApp:
         )
 
     def show_statistics(self):
-        ...
+        total = len(self.tasks)
+        completed = sum(1 for task in self.tasks if task.done)
+        incomplete = sum(1 for task in self.tasks if not task.done)
+        overdue = sum(1 for task in self.tasks if task.is_overdue())
+
+        print("=== タスク統計 ===")
+        print(f"総タスク数: {total}")
+        print(f"完了: {completed}")
+        print(f"未完了: {incomplete}")
+        print(f"期限切れ: {overdue}")
 
     def save_tasks(self):
-        ...
+        data = [task.to_dict() for task in self.tasks]
+
+        with open(
+            "task_manager.json",
+            "w",
+            encoding="utf-8"
+        ) as file:
+            json.dump(
+                data,
+                file,
+                ensure_ascii=False,
+                indent=4
+            )
 
     def load_tasks(self):
-        ...
+        try:
+            with open(
+                "task_manager.json",
+                "r",
+                encoding="utf-8"
+            ) as file:
+                data = json.load(file)
+
+            return [
+                Task.from_dict(task_data)
+                for task_data in data
+            ]
+
+        except FileNotFoundError:
+            return []
 
     def run(self):
-        ...
+        while True:
+            self.show_menu()
+
+            choice = input("選択: ")
+
+            if choice == "1":
+                self.add_task()
+
+            elif choice == "2":
+                self.show_tasks()
+
+            elif choice == "3":
+                self.search_tasks()
+
+            elif choice == "4":
+                self.complete_task()
+
+            elif choice == "5":
+                self.delete_task()
+
+            elif choice == "6":
+                self.show_statistics()
+
+            elif choice == "7":
+                print("アプリを終了します。")
+                break
+
+            else:
+                print("無効な選択です。")
 
 
 app = TodoApp()

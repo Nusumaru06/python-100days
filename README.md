@@ -33,7 +33,8 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day17 : OOP ToDo App with JSON
 - [x] Day18 : TodoApp Class Refactoring
 - [x] Day19 : Task String Representation
-- [ ] Day20 : Coming soon...
+- [x] Day20 : Mini Capstone - Task Manager v1.0
+- [ ] Day21 : Coming soon...
 
 ## 作成したアプリ
 
@@ -58,6 +59,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day17 | OOP ToDo App with JSON     | `to_dict()`・`from_dict()`を使い、TaskオブジェクトをJSON保存・復元 |
 | Day18 | TodoApp Class Refactoring  | `TodoApp`クラスを作成し、アプリ全体の処理をクラスに整理            |
 | Day19 | Task String Representation | `__str__()`を使ってTaskオブジェクトの表示を整理                    |
+| Day20 | Task Manager v1.0          | Python・JSON・datetime・OOPを組み合わせた総合制作                  |
 
 ---
 
@@ -94,17 +96,15 @@ Webアプリ開発（React・TypeScript）へ進む
 
 ## 今後
 
-Day15からOOP（オブジェクト指向）の学習を開始しました。
+Day15からOOP（オブジェクト指向）の学習を開始し、
+Day20ではこれまで学んできたPythonの基礎、JSON、datetime、OOPを組み合わせて
+Task Manager v1.0を作成しました。
 
-Day16ではこれまで作ってきたToDoアプリを`Task`クラスを使った構成へ変更し、
-Day17ではTaskオブジェクトをJSONへ保存・復元できるようにしました。
+ここからは、これまでの基礎を使いながら、
+より大きなアプリ開発やWebアプリ開発へ少しずつ進んでいく予定です。
 
-Day18ではさらに`TodoApp`クラスを作成し、
-タスクの追加・一覧・完了・削除などのアプリ全体の処理を
-1つのクラスにまとめました。
-
-今後はOOPの理解を深めながら、
-より大きなアプリやWebアプリ開発へ発展させていく予定です。
+次の目標は、コードの分割・モジュール化や、
+より実践的なアプリ構成を学ぶことです。
 
 ---
 

@@ -34,7 +34,7 @@ Webアプリ開発（React・TypeScript）へ進む
 - [x] Day18 : TodoApp Class Refactoring
 - [x] Day19 : Task String Representation
 - [x] Day20 : Mini Capstone - Task Manager v1.0
-- [ ] Day21 : Coming soon...
+- [x] day21 : Module Split - Task Manager
 
 ## 作成したアプリ
 
@@ -60,6 +60,7 @@ Webアプリ開発（React・TypeScript）へ進む
 | Day18 | TodoApp Class Refactoring  | `TodoApp`クラスを作成し、アプリ全体の処理をクラスに整理            |
 | Day19 | Task String Representation | `__str__()`を使ってTaskオブジェクトの表示を整理                    |
 | Day20 | Task Manager v1.0          | Python・JSON・datetime・OOPを組み合わせた総合制作                  |
+| Day21 | Module Split - Task Manager |  Task・TodoApp・起動処理を複数ファイルに分割し、importを使った構成を学習  |
 
 ---
 
